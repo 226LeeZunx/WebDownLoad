@@ -1,0 +1,161 @@
+/* Import font chữ phong cách hoạt hình từ Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@700&display=swap');
+
+/* ================= CSS GLOBAL ================= */
+body {
+    font-family: 'Nunito', 'Comic Sans MS', sans-serif;
+    background-color: #8be9fd; /* Nền xanh lam nhạt */
+    color: #282a36;
+    padding: 20px;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, h2 {
+    font-family: 'Fredoka One', cursive;
+    color: #ff79c6; /* Chữ hồng nổi bật */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    /* Tạo viền đen và bóng đổ đặc trưng của cartoon */
+    text-shadow: 3px 3px 0px #282a36,
+                 -1px -1px 0 #282a36, 1px -1px 0 #282a36, 
+                 -1px 1px 0 #282a36, 1px 1px 0 #282a36;
+    text-align: center;
+}
+
+/* ================= FORM (Trang Register & Lobby) ================= */
+form {
+    background-color: #ffffff;
+    border: 4px solid #282a36;
+    border-radius: 15px;
+    padding: 25px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 8px 8px 0px #282a36; /* Bóng đổ khối đặc */
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+label {
+    font-size: 1.1rem;
+}
+
+input[type="text"], input[type="email"] {
+    width: 90%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 3px solid #282a36;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 1rem;
+    box-shadow: inset 3px 3px 0px rgba(0,0,0,0.1);
+    transition: 0.2s;
+}
+
+input[type="text"]:focus, input[type="email"]:focus {
+    outline: none;
+    background-color: #ffff88; /* Chuyển nền vàng khi nhập */
+    border-color: #ff5555;
+}
+
+/* ================= NÚT BẤM (Buttons) ================= */
+input[type="submit"] {
+    background-color: #50fa7b; /* Xanh lá mạ */
+    color: #282a36;
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: 4px solid #282a36;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 4px 4px 0px #282a36;
+    transition: all 0.1s ease-in-out;
+    display: block;
+    width: 100%;
+}
+
+input[type="submit"]:active {
+    /* Hiệu ứng lún xuống khi click */
+    transform: translate(4px, 4px);
+    box-shadow: 0px 0px 0px #282a36;
+}
+
+/* ================= BẢNG (Trang Download) ================= */
+table {
+    width: 100%;
+    max-width: 700px;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 4px solid #282a36;
+    border-radius: 15px;
+    background-color: #ffffff;
+    box-shadow: 8px 8px 0px #282a36;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 3px solid #282a36;
+    border-right: 3px solid #282a36;
+}
+
+th:last-child, td:last-child {
+    border-right: none;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+th {
+    background-color: #bd93f9; /* Tím nhạt */
+    color: #ffffff;
+    font-family: 'Fredoka One', cursive;
+    text-shadow: 2px 2px 0px #282a36;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+tr:nth-child(even) {
+    background-color: #f1fa8c; /* Vàng nhạt xen kẽ */
+}
+
+/* ================= LINKS (Thẻ a) ================= */
+a {
+    display: inline-block;
+    color: #ffffff;
+    background-color: #ff5555; /* Đỏ nhạt */
+    padding: 8px 15px;
+    text-decoration: none;
+    border: 3px solid #282a36;
+    border-radius: 20px;
+    font-weight: bold;
+    box-shadow: 3px 3px 0px #282a36;
+    margin: 8px 5px;
+    transition: 0.1s;
+}
+
+a:hover {
+    background-color: #ffb86c; /* Chuyển cam khi di chuột */
+    transform: scale(1.05);
+}
+
+a:active {
+    transform: translate(3px, 3px) scale(1.05);
+    box-shadow: 0px 0px 0px #282a36;
+}
+
+/* ================= TEXT PHỤ LỤC ================= */
+p, strong {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border: 3px solid #282a36;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0px #282a36;
+    font-size: 1.1rem;
+}
